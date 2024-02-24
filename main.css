@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: rgb(62, 62, 252);
+    font-weight: bold;
+    font-style: italic;
+    padding: 8px;
+}
+
+header a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-cel form {
+    display: none;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.menu ul li {
+    padding: 0 12px;
+}
+
+.menu ul li a:hover {
+    color: #ccc;
+}
+
+#sobre {
+    margin-top: 24px;
+    margin-bottom: 48px;
+}
+
+#sobre img {
+    width: 40%;
+}
+
+#sobre article {
+    padding: 0 24px;
+}
+
+#sobre article h2,
+#produtos article h2 {
+    color: rgb(62, 62, 252);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.linha {
+    border: 1px solid rgb(62, 62, 252);
+    margin: 10px 0;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    column-gap: 2%;
+    row-gap: 5%;
+}
+
+.conteudo img {
+    max-width: 100%;
+}
+
+.conteudo a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.conteudo h3 {
+    margin-top: 6px;
+}
+
+.conteudo p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.preco {
+    margin-top: 12px;
+}
+
+.preco del {
+    color: #ff9c9c;
+    margin-right: 6px;
+}
+
+.conteudo button {
+    background-color: rgb(62, 62, 252);
+    color: #FFF;
+    padding: 8px;
+    margin-top: 16px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+
+.conteudo button:hover {
+    color: #bebebe;
+}
+
+footer {
+    background-color: rgb(62, 62, 252);
+    margin-top: 64px;
+    padding: 8px;
+    color: #FFF;
+    font-style: italic;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+}
+
+footer ul li {
+    padding-left: 24px;
+}
+
+footer ul li img {
+    height: 28px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 866px;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .container-flex {
+        display: block;
+    }
+    
+    .alinhamento {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #sobre {
+        display: block;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 48px;
+    }
+    
+    #sobre img {
+        width: 80%;
+    }
+    
+    #sobre article {
+        margin-top: 24px;
+        text-align: start;
+        padding: 0;
+    }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(2, 47.5%);
+        column-gap: 5%;
+        row-gap: 5%;
+    }
+    
+    .conteudo img {
+        max-width: 100%;
+    }
+    
+    .conteudo a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .conteudo h3 {
+        margin-top: 6px;
+    }
+    
+    .conteudo p {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    
+    .preco {
+        margin-top: 12px;
+    }
+    
+    .preco del {
+        color: #ff9c9c;
+        margin-right: 6px;
+    }
+    
+    .conteudo button {
+        background-color: rgb(62, 62, 252);
+        color: #FFF;
+        padding: 8px;
+        margin-top: 16px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .conteudo button:hover {
+        color: #bebebe;
+    }
+
+    footer {
+        background-color: rgb(62, 62, 252);
+        margin-top: 120px;
+        padding: 8px;
+        color: #FFF;
+        font-style: italic;
+    }
+    
+    footer ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    footer ul li {
+        padding-left: 24px;
+    }
+    
+    footer ul li img {
+        height: 28px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        max-width: 580px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 12px;
+    }
+
+    .container-flex {
+        display: block;
+    }
+
+    #sobre img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    #sobre article {
+        padding: 0;
+    }
+
+    .conteudo {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        column-gap: 2%;
+        row-gap: 1%;
+    }
+
+    .conteudo img {
+        max-width: 100%;
+    }
+    
+    .conteudo a {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+    .conteudo h3 {
+        margin-top: 6px;
+    }
+    
+    .conteudo p {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+    
+    .preco {
+        margin-top: 12px;
+    }
+    
+    .preco del {
+        color: #ff9c9c;
+        margin-right: 6px;
+    }
+    
+    .conteudo button {
+        background-color: rgb(62, 62, 252);
+        color: #FFF;
+        width: 100%;
+        padding: 8px;
+        margin-top: 16px;
+        border-radius: 3px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .conteudo button:hover {
+        color: #bebebe;
+    }
+
+    .menu-cel ul {
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        background-color: rgb(107, 107, 255);
+    }
+
+    .menu-cel ul li {
+        padding: 8px 12px;
+        display: flex;
+    }
+
+    .menu-cel ul li a:hover {
+        color: #ccc;
+        border-bottom: 2px solid rgb(62, 62, 252);
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-hamburguer {
+        width: 32px;
+        cursor: pointer;
+    }
+
+    .menu-hamburguer span {
+        height: 2px;
+        width: 100%;
+        background-color: #FFF;
+        display: block;
+        margin-bottom: 4px;
+    }
+
+    form {
+        display: none;
+    }
+
+    footer {
+        background-color: rgb(62, 62, 252);
+        margin-top: 120px;
+        padding: 8px;
+        color: #FFF;
+        font-style: italic;
+    }
+
+    footer h3 {
+        font-size: 1em;
+    }
+    
+    footer ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    footer ul li {
+        padding-left: 24px;
+    }
+    
+    footer ul li img {
+        height: 28px;
+    }
+}
